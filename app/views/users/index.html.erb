@@ -1,0 +1,25 @@
+<div ng-app="app">
+  <div ng-controller="usersCtrl" ng-init="setup()">
+  
+    <div ng-repeat="user in users">
+      <!-- <h3 ng-click="toggleBioVisible(student)" >{{ student.name }}</h3> -->
+      <!-- <p ng-class="{strike: student.bioVisible}">{{ student.bio }}</p> -->
+      <button ng-click="deleteUser($index)">Delete</button>
+    </div>
+
+    <h4>Add new User:</h4>
+      <ul>
+        <li><label>First Name:</label><input ng-model="newUserName"></li>
+
+        <li><label>Email:</label><input ng-model="newUserEmail"></li>
+
+        <li><label>Password:</label><input ng-model="newUserPassword"></li>
+
+        <li><label>Password Confirmation:</label><input ng-model="newUserPasswordConfirmation"></li>
+      </ul>
+    <button ng-click="addNewUser(newUserName, newUserEmail, newUserPassword, newUserPasswordConfirmation)">Add Student</button>
+
+    <h4>Total number of users:</h4>{{ users.length }}
+
+  </div>
+</div>
