@@ -11,6 +11,28 @@
 // about supported directives.
 //
 //= require jquery
+//= require bootstrap-sprockets
 //= require jquery_ujs
-//= require turbolinks
 //= require_tree .
+
+
+console.log("sanity check");
+
+function selectGarment(garment_title, garment_description, garment_condition,garment_size) {
+      var garment_div = document.getElementById("selected_garment_info");
+      garment_div.innerHTML = "<h2>" + garment_title + "</h2> <p>" + garment_description + "</p>";
+      console.log(garment_title);
+      console.log(garment_description);
+      console.log(garment_condition);
+      console.log(garment_size);
+      // garment.classList.select("list-group-item");
+    }
+
+
+
+
+
+
+
+
+

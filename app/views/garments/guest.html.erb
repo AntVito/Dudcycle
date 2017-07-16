@@ -1,2 +1,41 @@
-<h2>This is where the guest index will be shown think about maybe a partial coming from original index to simplify</h2>
 
+
+<div><%= render 'navbar' %></div><br>
+
+<div class="container-fluid" style="margin-top: 40px">
+  <div class="row">
+    <div class="col-sm-8" style="background-color:lavender;">
+      
+      <div id="selected_garment_info">
+        
+      </div>
+       <!-- In here belongs the logic to display a selected item from the index to the right. -->
+      
+      </div> 
+
+      <div class="col-sm-4" style="overflow:auto; height:100vh;">
+        <div class="row">
+      
+
+      <% @garments.each do |garment| %>
+        <div class="col-sm-12 list-group" onmousedown="selectGarment('<%=garment.title%>', '<%= garment.description %>', '<%= garment.condition %>', '<%= garment.size %>')">
+        
+          <div id="garment_single" class="list-group-item"> 
+              <h2 class="garment_header"><%= garment.title %></h2>
+              <p>Description: <%= garment.size %></p>
+            <div class="img-rounded" alt="Responsive image">
+              
+                <a href="https://placeholder.com">
+                  <img src="http://via.placeholder.com/140x140">
+                </a>
+              
+            </div>
+          </div>
+        
+        </div>
+      <% end %>
+      </div> <!-- div  -->
+      </div> <!-- div lavendar -->
+      </div>
+    </div>
+  </div>

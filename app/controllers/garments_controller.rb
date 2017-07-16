@@ -1,28 +1,35 @@
 class GarmentsController < ApplicationController
   
   def index
+    @garments = Garment.all
     render 'index.html.erb'
   end
 
+  def new
+    
+  end
+
   def show
+    @garment = Garment.find_by(id: params[:id])
     render 'show.html.erb'
   end
 
   def guest
+    @garments = Garment.all
     render 'guest.html.erb'
   end
 
   def create
-    @garment = Garment.new(
+    @garment = Garment.create(
       title: params[:title],
       description: params[:description],
       size: params[:size],
       material: params[:material],
       condition: params[:condition],
-      user_id: @current_user
+      user_id: current_user.id
       )
 
-      flash[:success] = "#{garment.title} successfully created!"
-    redirect_to "/garment/#{garment.id}"
+      flash[:success] = "#{@garment.title} successfully added!"
+    redirect_to "/garments/#{@garment.id}"
   end
 end
