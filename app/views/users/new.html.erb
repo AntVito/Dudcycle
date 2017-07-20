@@ -1,18 +1,18 @@
 
-<div class="container">
+<div class="container" style="background-image: '/images/vertical_cloth_@2X.png'">
 
 <div class="text-center">
 
-<div style="font-size:36px; font-family:futura">Welcome!</div>
+<div style="font-size:36px; font-family:futura; color: white; text-shadow: 1px 1px 2px orange; padding-top: 100px">Welcome to DudCycle</div>
 
 <div class="container-fluid">
   <div class="row">
     <div class="dropdown">
     <div class="sign_up_button">
-      <button class="btn btn-lg btn-primary" data-toggle="collapse" data-target="#signup_form">Sign Up</button>
-      <button class="btn btn-lg btn-info" data-toggle="collapse" data-target="#login_form">Log in</button>
-      <div id="signup_form" class="collapse">
+      <button class="btn btn-lg btn-primary" style="text-shadow: 1px 1px 2px black" data-toggle="collapse" data-target="#signup_form">Sign Up</button>
+      <button class="btn btn-lg btn-info" style="text-shadow: 1px 1px 2px black" data-toggle="collapse" data-target="#login_form">Log in</button>
       
+      <div id="signup_form" class="collapse">
         <ul style="list-style-type:none;">
           <%= form_tag '/users', method: :post do  %>
             <li><input type="text" name="name" placeholder="name"></li>
@@ -39,11 +39,7 @@
 </div>
 </div>
 
-<div class="container-fluid">
-  <%= form_tag "/guest", method: :get do %>
-    <input class="btn btn-sm btn-warning" type="submit" value="Continue as Guest">
-  <% end %>
-</div>
+
 </div>
 </div>
 

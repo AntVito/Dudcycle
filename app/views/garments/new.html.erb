@@ -1,3 +1,4 @@
+<div><%= render 'navbar' %></div><br>
 <h1>Add New Garment</h1>
 <%= form_tag '/garments', method: :post do  %>
   <div>
@@ -7,15 +8,7 @@
     Description: <input type="text" name="description">
   </div>
   <div>
-    Size: 
-    <select>
-      <option value="Extra Small">XS</option>
-      <option value="Small">Small</option>
-      <option value="Medium">Medium</option>
-      <option value="Large">Large</option>
-      <option value="Extra Large">XL</option>
-      <option value="XX Large">XXL</option>
-    </select>
+    Size: <input type="text" name="size">
   </div>
   <div>
     Material: <input type="text" name="material">
@@ -35,3 +28,16 @@
   
   <input type="submit" value="Submit">
 <% end %>
+
+<button class="btn btn-lg btn-primary" data-toggle="collapse" data-target="#signup_form">Sign Up</button>
+<div id="signup_form" class="collapse">
+        <ul style="list-style-type:none;">
+          <%= form_tag '/users', method: :post do  %>
+            <li><input type="text" name="name" placeholder="name"></li>
+            <li><input type="email" name="email" placeholder="email"></li>
+            <li><input type="password" name="password" placeholder="password"></li>
+            <li><input type="password" name="password_confirmation" placeholder="confirm password"></li>
+            <li><input type="submit" value="Submit"></li>
+          <% end %>
+        </ul>
+      </div>

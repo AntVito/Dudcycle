@@ -7,32 +7,37 @@
           <li data-target="#home-slider" data-slide-to="2"></li>
         </ol>
         <div class="carousel-inner">
-          <div class="item active" style="background: url(img/img01.jpg);">
+          <div class="item active" style="background: url(http://ppcorn.com/us/wp-content/uploads/sites/14/2016/01/Mullets-80s-ppcorn.jpg); padding-top: 50px">
             <div class="container">
               <div class="row">
                 <div class="col-md-12">
                   <div class="carousel-content">
-                    <h2 class="animated fadeInUpBig text-center text-black">Hello</h2>
-                      <p class="animated rollIn text-black text-center"><span class="text900">Welcome to Dodolan Manuk</span> an awesome catalog theme, <br> built with <i class="fa fa-heart-o"></i> in <span class="text900">Ngayogyokarto hadiningrat.</span><br><br> <a href="#" class="btn btn-purple btn-lg">Get Started</a></p>  
+                    <h4 class="animated fadeInUpBig text-right" style="color: white; text-shadow: 1px 1px 2px black">Nadines Boyfriend Chaz ~> </h4>
+                    <div style="padding-top: 200px">
+                      <h2 class="animated rollIn text-left" style="color: white; text-shadow: 1px 1px 2px black"><span class="text900">Welcome to DudCycle</span><br> The World's 27th leading<br> clothing giveaway site that <br>noone knows about <br> built with love and coffee<i class="fa fa-heart-o"></i><span class="text900">!</span><br><br> <a href="#" class="btn btn-purple btn-lg"></a></h2>  
+                    </div>
                   </div>
                 </div> 
               </div>
             </div>
           </div>
-          <div class="item" style="background: url(img/img02.jpg);">
+          <div class="item" style="background: url(http://www.elgenahearts.com/wp-content/uploads/2015/07/What-to-wear11-1024x682.jpg);">
             <div class="container">
               <div class="row">
                 <div class="col-md-12">
                   <div class="carousel-content">
-                    <h3 class="animated fadeInLeftBig text-left">.Built</h3>
-          <p class="animated fadeInDownBig text-left">Your own online shop using this catalog theme.<br> Simple and easy cutomize just $12.</p>
-          <a class="btn btn-purple btn-lg animated fadeInRight" href="#">Learn more &raquo;</a>
+                    <h1 class="animated fadeInRightBig text-right" style="color: white; padding-top: 25px; text-shadow: 1px 1px 2px black">Use it or lose dummy!</h1>
+                    <div style="padding-top: 290px"></div>
+          <h2 class="animated fadeInDownBig text-left" style="color: magenta; text-shadow: 1px 1px 2px black">Are you pulling your hair out because you have pounds upon pounds of clothing you don't ever wear? #shootyourselfinahurry</h2>
+          <a class="btn btn-purple btn-lg animated fadeInRight" href="#" style="color: white"> &raquo;</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          
         </div>
+
         <a class="left carousel-control" href="#home-slider" data-slide="prev">
           <i class="fa fa-angle-left"></i>
         </a>
@@ -46,182 +51,40 @@
     <!-- end:slider -->
   
   <!-- begin:tagline -->  
-  <div id="tagline">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h2>Hello There, This is 'Dodolan Manuk' Themes</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis lectus metus, at posuere neque. Sed pharetra nibh eget orci convallis at posuere leo convallis. Sed blandit augue vitae augue scelerisque bibendum.</p>
-        </div>
-      </div>
-    </div>
-  </div>
+  
   <!-- end:tagline -->
   
   <!-- begin:featured -->
-  <div id="featured">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="heading-title">
-            <h2>Services</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4 col-sm-4">
-          <div class="featured-container">
-            <div class="featured-photos">
-              <i class="fa fa-gift"></i>
-            </div>
-            <h3>the chairman</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis lectus metus, at posuere neque.</p>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-4">
-          <div class="featured-container">
-            <div class="featured-photos">
-              <i class="fa fa-heart-o"></i>
-            </div>
-            <h3>the vice chairman</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis lectus metus, at posuere neque.</p>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-4">
-          <div class="featured-container">
-            <div class="featured-photos">
-              <i class="fa fa-flag"></i>
-            </div>
-            <h3>the treasurer</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis lectus metus, at posuere neque.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  
   <!-- end:featured -->
   
   <!-- begin:catalogue -->
-  <div id="catalogue">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="heading-title">
-            <h2>Most Wanted</h2>
-            <p>The best of the best item most wanted in 2013</p>
-          </div>  
-        </div>
+<div class="row">
+<div class="col-md-3 col-sm-4 col-xs-12">
+  <% @garments.each do |garment| %>
+    
+      <div class="container">
+        <div class="caption-img"></div>
+          <div class="caption-details">
+            <div class="garment_single col-md-4 col-sm-8 col-xs-12" style="font-family: avenir; background-color: white; border-radius: 30px; padding: 3px 5px 3px 5px; margin: 2px">
+              <h2 class="garment_header" style="font-weight: bold"><%= garment.title %></h2>
+                <p>Description: <%= garment.description %></p>
+                <p>size: <%= garment.size %></p>
+                <p>material: <%= garment.material %></p>
+                <p>condition: <%= garment.condition %></p>
+                <p>category: <%= garment.category %></p>
+                <div class="col-md-4 col-sm-8 col-xs-12"><img src="https://bloximages.chicago2.vip.townnews.com/tdn.com/content/tncms/assets/v3/editorial/e/13/e1395ddd-9927-5446-8a25-47d2b7178d6b/5956e58dc023e.image.jpg?resize=300%2C450" style="justify-content: right;"></div>
+                  
+          </div>
+                  
       </div>
-      <div class="row">
-        <div class="col-md-3 col-sm-4 col-xs-12">
-          <div class="thumbnail">
-            <div class="caption-img" style="background: url(img/manuk.jpg);"></div>
-            <div class="caption-details">
-            <h3>Border Canary</h3>
-            <span class="price">$200</span>
-            </div>
-            <a href="detail.html"><div class="caption-link"><i class="fa fa-plus"></i></div></a>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-4 col-xs-12">
-          <div class="thumbnail">
-            <div class="caption-img" style="background: url(img/manuk.jpg);"></div>
-            <div class="caption-details">
-            <h3>Border Canary</h3>
-            <span class="price">$200</span>
-            </div>
-            <a href="detail.html"><div class="caption-link"><i class="fa fa-plus"></i></div></a>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-4 col-xs-12">
-          <div class="thumbnail">
-            <div class="caption-img" style="background: url(img/manuk.jpg);"></div>
-            <div class="caption-details">
-            <h3>Border Canary</h3>
-            <span class="price">$200</span>
-            </div>
-            <a href="detail.html"><div class="caption-link"><i class="fa fa-plus"></i></div></a>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-4 col-xs-12">
-          <div class="thumbnail">
-            <div class="caption-img" style="background: url(img/manuk.jpg);"></div>
-            <div class="caption-details">
-            <h3>Border Canary</h3>
-            <span class="price">$200</span>
-            </div>
-            <a href="detail.html"><div class="caption-link"><i class="fa fa-plus"></i></div></a>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-4 col-xs-12">
-          <div class="thumbnail">
-            <div class="caption-img" style="background: url(img/manuk.jpg);"></div>
-            <div class="caption-details">
-            <h3>Border Canary</h3>
-            <span class="price">$200</span>
-            </div>
-            <a href="detail.html"><div class="caption-link"><i class="fa fa-plus"></i></div></a>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-4 col-xs-12">
-          <div class="thumbnail">
-            <div class="caption-img" style="background: url(img/manuk.jpg);"></div>
-            <div class="caption-details">
-            <h3>Border Canary</h3>
-            <span class="price">$200</span>
-            </div>
-            <a href="detail.html"><div class="caption-link"><i class="fa fa-plus"></i></div></a>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-4 col-xs-12">
-          <div class="thumbnail">
-            <div class="caption-img" style="background: url(img/manuk.jpg);"></div>
-            <div class="caption-details">
-            <h3>Border Canary</h3>
-            <span class="price">$200</span>
-            </div>
-            <a href="detail.html"><div class="caption-link"><i class="fa fa-plus"></i></div></a>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-4 col-xs-12">
-          <div class="thumbnail">
-            <div class="caption-img" style="background: url(img/manuk.jpg);"></div>
-            <div class="caption-details">
-            <h3>Border Canary</h3>
-            <span class="price">$200</span>
-            </div>
-            <a href="detail.html"><div class="caption-link"><i class="fa fa-plus"></i></div></a>
-          </div>
-        </div>
-      </div>
+      <a href="detail.html"><div class="caption-link"><i class="fa fa-plus"></i></div></a>
     </div>
-  </div>
+  <% end %>
+</div>
 
-<h2>Made It!</h2>
-<h2>pick a bootstrap theme</h2>
-<h2>clean up the header +> navbar (light), filters, user recognition, logout, picture scrolling, </h2>
-<h2>organize columns, and divs for items, carousel for multiple garment images,</h2>
-<h2>play with CSS, make complex, background = LV hash pattern (dark) </h2>
 
-<%= form_tag "/logout", method: :get do %>
-  <input type="submit" value="Log Out">
-<% end %>
-<%= form_tag "/garments/new", method: :get do %>
-  <input type="submit" value="Add New Garment">
-<% end %>
 
-<section>
-  <div class="row">
-
-    <% @garments.each do |garment| %>
-      <div class="col-sm-4">
-        <div class="garment_single">
-            <h2 class="garment_header"><%= garment.title %></h2>
-            <p>Description: <%= garment.description %></p>
-            <a href="/garments/<%= garment.id %>" title="View Garment"></a>
-        </div>
-      </div>
-    <% end %>
-  </div>
-</section>
+ 
+    
+  
